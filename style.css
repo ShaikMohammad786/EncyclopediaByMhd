@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+header img {
+    height: 40px;
+    margin-left: 30%;
+}
+
+main {
+    min-height: 82vh;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+.walldrop {
+    overflow: hidden;
+    margin-top: 0;
+    height: 400px;
+    background-image: url(https://www.rolustech.com/wp-content/uploads/2017/01/Benefits-of-CRM-for-Higher-Education-Institutions-2.jpg);
+}
+
+.first {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 4%;
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+.second {
+    font-size: 30px;
+    margin: auto;
+    margin-top: 1%;
+    max-width: 50%;
+    color: white;
+
+}
+
+form input {
+    margin-top: 2%;
+    height: 70px;
+    width: 400px;
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+    font-size: x-large;
+
+}
+
+form button {
+    margin-top: 2%;
+    height: 70px;
+    width: 100px;
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+    background-color: rgba(255, 106, 0, 0.748);
+    font-size: large;
+    font-weight: bold;
+}
+
+.result {
+
+    background-image: url(a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 360px;
+    margin: auto;
+    font-size: 25px;
+    padding-top: 30px;
+
+
+
+}
+
+.separate {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(28, 30, 91);
+}
+
+footer {
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    height: 10px;
+}
+
+/* 📌 For Tablets (Width <= 768px) */
+@media (max-width: 768px) {
+    .first {
+        font-size: 40px; /* Reduce title size */
+    }
+
+    .second {
+        font-size: 25px;
+        max-width: 70%;
+    }
+
+    form input {
+        width: 90%; /* Make input fields more flexible */
+    }
+    
+    .walldrop {
+        min-height: 300px; /* Reduce height */
+    }
+}
+
+/* 📌 For Mobile Phones (Width <= 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Stack elements */
+        text-align: center;
+    }
+
+    header img {
+        margin-left: 0; /* Remove large margin */
+    }
+
+    .first {
+        font-size: 30px; /* Reduce title size */
+    }
+
+    .second {
+        font-size: 20px;
+        max-width: 90%;
+    }
+
+    form input {
+        width: 95%; /* Full width for small screens */
+    }
+
+    .walldrop {
+        min-height: 250px; /* Smaller height */
+    }
+
+    .result {
+        min-height: auto; /* Allow content to expand naturally */
+        padding: 20px;
+    }
+
+    footer {
+        font-size: medium;
+        height: auto; /* Allow it to adjust */
+        padding: 10px 0;
+    }
+}
